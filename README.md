@@ -78,7 +78,7 @@ A simple Angular-based Task Manager application to help users add, delete, and m
 * `add-task.component.ts` — Form component to add new tasks.
 * `task.service.ts` — Handles API calls to fetch, add, update, and delete tasks.
 * `task.ts` — Task data model interface.
-* `assets/screenshots/` — Folder to store UI screenshots for documentation.
+* `screenshots/` — Folder to store UI screenshots for documentation.
 
 ---
 
