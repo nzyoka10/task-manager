@@ -33,7 +33,11 @@ A simple Angular-based Task Manager application to help users add, delete, and m
 
 ### Current UI
 
-![Add Task Screen](./screenshot/UI.png)
+![Add Task Screen](./screenshot/UI.png) 
+
+<br>
+
+![Add Task Screen](./screenshot/UI2.png)
 
 
 ---

@@ -48,12 +48,7 @@
     {
       "id": "5cca",
       "title": "Kimbo",
-      "completed": false
-    },
-    {
-      "id": "1390",
-      "title": "Kenya visit",
-      "completed": false
+      "completed": true
     }
   ]
 }
