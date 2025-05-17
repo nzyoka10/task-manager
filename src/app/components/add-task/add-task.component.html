@@ -1,0 +1,10 @@
+<!-- add-task.component.html -->
+<div class="mb-3">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Enter new task"
+    [(ngModel)]="title"
+  />
+  <button class="btn btn-primary mt-2" (click)="addTask()">Add Task</button>
+</div>
