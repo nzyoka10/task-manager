@@ -7,30 +7,36 @@ import { Task } from '../../task';
 @Component({
   selector: 'app-add-task',
   templateUrl: './add-task.component.html',
-  standalone: true,
-  imports: [FormsModule],
+  standalone: true,        // This is a standalone component
+  imports: [FormsModule],   // Import FormsModule for ngModel
 })
 export class AddTaskComponent {
+  // Holds the current input value
   title: string = '';
 
-  // This will send the new task to the parent component
+  // Emits the newly created Task to the parent component
   @Output() taskAdded = new EventEmitter<Task>();
 
   constructor(private taskService: TaskService) {}
 
-  // Add new task to the backend and emit to parent
+  /**
+   * Creates a new task via the service, then emits it to the parent
+   */
   addTask(): void {
-    if (!this.title.trim()) return;
+    // Prevent empty submissions
+    if (!this.title.trim()) {
+      return;
+    }
 
     const newTask: Task = {
-      title: this.title,
+      title: this.title.trim(),
       completed: false,
     };
 
-    // Call service to save task to the server
+    // Save to backend, then notify parent and clear input
     this.taskService.addTask(newTask).subscribe((savedTask) => {
-      this.taskAdded.emit(savedTask); // Send task to parent
-      this.title = ''; // Clear input
+      this.taskAdded.emit(savedTask);
+      this.title = '';
     });
   }
 }

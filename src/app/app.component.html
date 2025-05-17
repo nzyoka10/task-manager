@@ -1,3 +1,45 @@
 <h1 class="text-center mt-4">Task Manager</h1>
 <app-add-task></app-add-task>
 <app-task-list></app-task-list>
+
+
+
+
+<!-- Add this at the bottom of your app.component.html -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div
+    class="toast align-items-center text-bg-success border-0"
+    id="successToast"
+    role="alert"
+    aria-live="assertive"
+    aria-atomic="true"
+  >
+    <div class="d-flex">
+      <div class="toast-body">Task Added Successfully!</div>
+      <button
+        type="button"
+        class="btn-close btn-close-white me-2 m-auto"
+        data-bs-dismiss="toast"
+        aria-label="Close"
+      ></button>
+    </div>
+  </div>
+
+  <div
+    class="toast align-items-center text-bg-danger border-0"
+    id="deleteToast"
+    role="alert"
+    aria-live="assertive"
+    aria-atomic="true"
+  >
+    <div class="d-flex">
+      <div class="toast-body">Task Deleted!</div>
+      <button
+        type="button"
+        class="btn-close btn-close-white me-2 m-auto"
+        data-bs-dismiss="toast"
+        aria-label="Close"
+      ></button>
+    </div>
+  </div>
+</div>

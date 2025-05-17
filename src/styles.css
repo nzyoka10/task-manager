@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+/* src/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+p {
+  font-weight: 400;
+}
+/* main container */
+
+/* task-list.component.css */
+
+.text-decoration-line-through {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+ul.list-group {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #343a40;
+    font-size: 24px;
+}
+
+

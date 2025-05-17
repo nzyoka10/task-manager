@@ -1,60 +1,103 @@
-# TaskManager
+Sure! Here's a simple but detailed README file template for your **Task Manager App**, including placeholders for UI screenshots. You can replace the image placeholders with your actual screenshots.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
+---
 
-## Development server
+# Task Manager App
 
-To start a local development server, run:
+A simple Angular-based Task Manager application to help users add, delete, and manage tasks with a clean UI and Bootstrap styling.
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Features
 
-## Code scaffolding
+* Add new tasks with a title.
+* View a list of tasks.
+* Mark tasks as complete or incomplete.
+* Delete tasks.
+* Toast notifications for task addition and deletion.
+* Responsive UI using Bootstrap.
+* Uses Bootstrap Icons for buttons and status.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## Technologies Used
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+* Angular (Standalone Components)
+* TypeScript
+* Bootstrap 5 (CSS and Icons)
+* RxJS (Observables)
+* REST API for backend (mock or real)
+* Bootstrap Toast for notifications
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## Screenshots
 
-To build the project run:
+### Add New Task
 
-```bash
-ng build
-```
+![Add Task Screen](./screenshot/UI.png)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Installation & Setup
 
-```bash
-ng test
-```
+1. **Clone the repository**
 
-## Running end-to-end tests
+   ```bash
+   git clone https://github.com/yourusername/task-manager.git
+   cd task-manager
+   ```
 
-For end-to-end (e2e) testing, run:
+2. **Install dependencies**
 
-```bash
-ng e2e
-```
+   ```bash
+   npm install
+   ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+3. **Run the app**
 
-## Additional Resources
+   ```bash
+   ng serve
+   ```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# task-manager
+4. Open your browser at `http://localhost:4200` to see the app running.
+
+---
+
+## Usage
+
+* Use the input field and button at the top to add new tasks.
+* Click the checkbox next to each task to mark it complete or incomplete.
+* Use the trash icon button to delete tasks.
+* Toast messages will appear confirming your actions.
+
+---
+
+## Project Structure
+
+* `task-list.component.ts` — Displays the list of tasks and manages task operations.
+* `add-task.component.ts` — Form component to add new tasks.
+* `task.service.ts` — Handles API calls to fetch, add, update, and delete tasks.
+* `task.ts` — Task data model interface.
+* `assets/screenshots/` — Folder to store UI screenshots for documentation.
+
+---
+
+## Future Improvements
+
+* Add user authentication.
+* Support task editing.
+* Add due dates and priority levels.
+* Add filtering and sorting options.
+* Integrate with real backend APIs.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+If you want, I can help you generate screenshots or image placeholders based on your UI code. Just let me know!
