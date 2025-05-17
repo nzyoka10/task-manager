@@ -1,6 +1,4 @@
-Sure! Here's a simple but detailed README file template for your **Task Manager App**, including placeholders for UI screenshots. You can replace the image placeholders with your actual screenshots.
 
----
 
 # Task Manager App
 
@@ -33,7 +31,7 @@ A simple Angular-based Task Manager application to help users add, delete, and m
 
 ## Screenshots
 
-### Add New Task
+### Current UI
 
 ![Add Task Screen](./screenshot/UI.png)
 
